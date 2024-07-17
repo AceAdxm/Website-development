@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madfut 24 Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        h1 {
+            text-align: center;
+            color: #ff4757;
+            font-size: 2.5em;
+        }
+        p {
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .order-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+        .order-form label {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+        .order-form input[type="text"] {
+            padding: 10px;
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+        .button-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .button-container input[type="radio"] {
+            display: none;
+        }
+        .button-container label {
+            padding: 15px 30px;
+            border: 2px solid #ff4757;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1.2em;
+        }
+        .button-container label:hover {
+            background-color: #ff4757;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        .button-container input[type="radio"]:checked + label {
+            background-color: #ff4757;
+            color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .order-form input[type="submit"], .pay-now {
+            padding: 15px 30px;
+            background-color: #ff4757;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .order-form input[type="submit"]:hover, .pay-now:hover {
+            background-color: #e84141;
+            transform: scale(1.05);
+        }
+        .prices {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 1.2em;
+        }
+        .prices div {
+            margin: 10px 0;
+        }
+        .discord-link {
+            display: block;
+            text-align: center;
+            margin-top: 30px;
+        }
+        .discord-link a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #7289da;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: all 0.3s ease;
+        }
+        .discord-link a:hover {
+            background-color: #5b6eae;
+            transform: scale(1.05);
+        }
+        .paypal-logo {
+            width: 20px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Madfut 24 Store</h1>
+        <p>Get your favorite packs and coins for Madfut 24 below. Please select the type and amount of items you want to order:</p>
+        <form class="order-form">
+            <label for="order">Please input your email or Phone number:</label>
+            <input type="text" id="order" name="order">
+
+            <div class="button-container">
+                <input type="radio" id="packs" name="orderType" value="packs">
+                <label for="packs">Packs - £5.00</label>
+
+                <input type="radio" id="coins" name="orderType" value="coins">
+                <label for="coins">Coins - £6.50</label>
+            </div>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="prices">
+            <div><strong>Packs:</strong> £5.00</div>
+            <div><strong>Coins:</strong> £6.50</div>
+        </div>
+
+        <div class="order-form">
+            <button class="pay-now">
+                <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_37x23.jpg" alt="PayPal Logo" class="paypal-logo">
+                Pay Now
+            </button>
+        </div>
+
+        <div class="discord-link">
+            <a href="https://discord.gg/MPQBHERHQe" target="_blank">Join our Discord</a>
+        </div>
+    </div>
+</body>
+</html>
